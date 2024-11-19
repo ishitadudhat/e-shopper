@@ -1,9 +1,10 @@
 import React from 'react';
-import './Navbar.css';
+import '../styles/Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-dark text-white navbar-expand-lg">
+    <>
+    <nav className="navbar bg-dark navbar-expand-lg">
       <div className="container">
         <a className="navbar-brand" href="/">E-Shopper</a>
         <button
@@ -15,7 +16,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav">
             <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
             <li className="nav-item"><a className="nav-link" href="#shop">Shop</a></li>
             <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
@@ -24,6 +25,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </>
   );
 };
 
